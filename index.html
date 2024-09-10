@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Writter</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+    />
+</head>
+<body>
+
+    <div>
+        <center>
+        <h1 id="app"></h1>    
+        </center>
+    </div>
+
+    <script>
+        var app = document.getElementById('app');
+
+        var typewriter = new Typewriter(app, {
+            loop: true,
+            delay: 75,
+        });
+
+        typewriter
+            .pauseFor(1500)
+            .typeString('Tutorial tips and trick Javascript - tiktok.com/@lamhot1993')
+            .pauseFor(2500)
+            .deleteChars(50)
+            .typeString('<strong>JS</strong> type writter automatically')
+            .typeString(' by www.deratek.id')
+            .pauseFor(1000)
+            .start();
+    </script>
+    
+</body>
+</html>
